@@ -1,0 +1,17 @@
+{
+    "id": "zhl-custom-swiper",
+    "name": "可横向左右无缝滑动、无缝轮播自定义swiper",
+    "version": "1.0.0",
+    "description": "可横向左右无缝滑动、无缝轮播自定义swiper",
+    "keywords": [
+        "无缝",
+        "轮播",
+        "swiper"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}

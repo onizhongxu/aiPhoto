@@ -1,0 +1,69 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"picture": {
+			"bsonType": "file",
+			"fileMediaType": "image",
+			"title": "图片文件",
+			"description": "图片文件信息，包括文件名、url等"
+		},
+		"picturePath": {
+			"bsonType": "string",
+			"title": "图片路径",
+			"description": "图片路径"
+		},
+		"pictureDesc": {
+			"bsonType": "string",
+			"title": "画面描述",
+			"description": "画面描述"
+		},
+		"pictureModel": {
+			"bsonType": "string",
+			"title": "画面模型",
+			"description": "画面模型"
+		},
+		"pictureSize": {
+			"bsonType": "string",
+			"title": "图画大小-分辨率",
+			"description": "图画大小-分辨率"
+		},
+		"pictureTopic": {
+			"bsonType": "string",
+			"title": "模型主题",
+			"description": "模型主题"
+		},
+		"pictureStyle": {
+			"bsonType": "string",
+			"title": "风格选择",
+			"description": "风格选择"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"description": "生成ID，参考`uni-id-users` 表",
+			"title": "用户ID",
+			"forceDefaultValue": {
+				"$env": "uid"
+			},
+			"foreignKey": "uni-id-users._id"
+		},
+		"addDate": {
+			"bsonType": "timestamp",
+			"description": "添加时间",
+			"title": "添加时间",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+	}
+}
